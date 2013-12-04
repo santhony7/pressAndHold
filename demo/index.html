@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Press and Hold Demo
+		</title>
+		<meta http-equiv="x-ua-compatible" content="IE=8,9,10">
+	</head>
+	<style>
+		.myDeleteButton { padding: 5px; border: 1px solid blue; width: 150px; }
+	</style>
+	<body>
+		<div>
+			<div style="float:left; width:300px;">
+				<span class="addi">
+					Item 1
+				</span>
+				<div class="myDeleteButton" data-id="1">
+					Delete Item 1
+				</div>
+			</div>
+			<div style="float: left; width:300px;">
+				<span class="addi">
+					Item 2
+				</span>
+				<button class="myDeleteButton" data-id="2">
+					Delete Item 2
+				</button>
+			</div>
+			<div style="float: left; width:300px;">
+				<span class="addi">
+					Item 3
+				</span>
+				<a href="#" class="myDeleteButton" data-id="3">Delete  Item 3</a>
+			</div>
+			<div style="float: left; width:300px;">
+				<span class="addi">
+					Item 4
+				</span>
+				<a href="#" class="myDeleteButton" data-id="4">Delete  Item 4</a>
+			</div>
+		</div>
+		</div>
+		<script src="../dist/jquery.pressAndHold.js">
+				
+		</script>
+		<script type="text/javascript">
+				        $(document).ready(function() {
+
+		        	$(".myDeleteButton").pressAndHold({
+		        		propertyName: "a custom value"
+		        	});
+
+		        	$(".myDeleteButton").on('start.holdToDelete', function(event) {
+		        		event.preventDefault();
+		        		console.log("start"); /* Act on the event */
+		        	});
+		        	$(".myDeleteButton").on('delete.holdToDelete', function(event) {
+		        		event.preventDefault();
+		        		console.log("Remove Address ID: " + $(event.target).data('id'));
+		        		$(event.target).parent().hide(); /* Act on the event */
+		        	});
+		        	$(".myDeleteButton").on('end.holdToDelete', function(event) {
+		        		event.preventDefault();
+		        		console.log("end"); /* Act on the event */
+		        	});
+
+		        });
+		</script>
+	</body>
+
+</html>
