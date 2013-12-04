@@ -30,7 +30,7 @@ Also, I totally stole this idea from someone else but I can't remember who it wa
 	});
 	```
 
-#### [demo/](https://github.com/jquery-boilerplate/boilerplate/tree/master/demo)
+#### [demo/](https://github.com/santhony7/pressAndHold)
 
 Contains a simple HTML demo.
 
