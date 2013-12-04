@@ -1,6 +1,5 @@
-# jQuery Boilerplate [![Build Status](https://secure.travis-ci.org/jquery-boilerplate/jquery-boilerplate.png?branch=master)](https://travis-ci.org/jquery-boilerplate/jquery-boilerplate)
+# jQuery Press and Hold
 
-### A jump-start for jQuery plugins development
 
 Are you as tired as I am of "Are you sure?" dialog boxes to make sure users don't hurt themselves? Then maybe you are in the right place. This plugin makes the user hold a button down (or any container element) for a priod of time before acting. This is my first attempt at writing a jQuery plugin. I am VERY much open to suggestions.
 
