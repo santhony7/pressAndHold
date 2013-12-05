@@ -6,7 +6,6 @@ Are you as tired as I am of "Are you sure?" dialog boxes to make sure users don'
 Also, I totally stole this idea from someone else but I can't remember who it was or where I saw it or even when. 
 
 ## Usage
-
 1. Include jQuery of course:
 
 	```html
@@ -22,12 +21,23 @@ Also, I totally stole this idea from someone else but I can't remember who it wa
 3. Call the plugin:
 
 	```javascript
-	$("#element").pressAndHold({
-		holdTime: 700,
-		progressIndicatorRemoveDelay: 300,
-		progressIndicatorColor: "#ff0000",
-		progressIndicatorOpacity: 0.6
-	});
+	$("#element").pressAndHold();
 	```
 
+## Options
+* **holdTime:**  
+  The amount of time the user needs to hold the mouse button.
+* **progressIndicatorRemoveDelay:**  
+  Sets a delay on removing the progress indicator. Might be a useful hint to help teach the user how to use the control.
+* **progressIndicatorColor:**  
+  Color of the progress bar.
+* **progressIndicatorOpacity:**  
+  Opacity of the progress bar.
 
+## Events
+* **start.pressAndHold:**  
+  The amount of time the user needs to hold the mouse button.
+* **click.pressAndHold**  
+  Sets a delay on removing the progress indicator. Might be a useful hint to help teach the user how to use the control.
+* **end.pressAndHold**  
+  Opacity of the progress bar.
