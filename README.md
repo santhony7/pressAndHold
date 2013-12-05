@@ -36,8 +36,8 @@ Also, I totally stole this idea from someone else but I can't remember who it wa
 
 ## Events
 * **start.pressAndHold:**  
-  The amount of time the user needs to hold the mouse button.
+  The control has started the holding timer.
 * **click.pressAndHold**  
-  Sets a delay on removing the progress indicator. Might be a useful hint to help teach the user how to use the control.
+  The control has completed holding for the entirity of the hold time.
 * **end.pressAndHold**  
-  Opacity of the progress bar.
+  The control has completed holding regarless of duration.
