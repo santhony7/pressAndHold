@@ -9,20 +9,28 @@
         "confirmation"
     ],
     "version": "1.0.0",
-    "author": {
-        "name": "Tony Smith",
-        "url": "http://naptown.com/"
-    },
+    "author": 
+        {
+            "name": "Tony Smith",
+            "url": "http://naptown.com/"
+        },
     "maintainers": [
         {
             "name": "Tony Smith",
             "url": "http://naptown.com/"
         }
     ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
     "bugs": "https://github.com/santhony7/pressAndHold/issues",
     "homepage": "http://naptown.com/pressAndHold/",
     "docs": "https://github.com/santhony7/pressAndHold/",
-    "dependencies": {
-        "jquery": ">=1.5"
-    }
+    "dependencies": 
+        {
+            "jquery": ">=1.5"
+        }
 }
