@@ -43,8 +43,8 @@
 	        	$(".myDeleteButton").on('start.pressAndHold', function(event) {
 	        		console.log("start"); 
 	        	});
-	        	$(".myDeleteButton").on('click.pressAndHold', function(event) {
-	        		console.log("click");
+	        	$(".myDeleteButton").on('complete.pressAndHold', function(event) {
+	        		console.log("complete");
 	        		$(event.target).parent().hide(); 
 	        	});
 	        	$(".myDeleteButton").on('end.pressAndHold', function(event) {

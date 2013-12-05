@@ -37,7 +37,7 @@ Also, I totally stole this idea from someone else but I can't remember who it wa
 ## Events
 * **start.pressAndHold:**  
   The control has started the holding timer.
-* **click.pressAndHold**  
+* **complete.pressAndHold**  
   The control has completed holding for the entirity of the hold time.
 * **end.pressAndHold**  
   The control has completed holding regarless of duration.

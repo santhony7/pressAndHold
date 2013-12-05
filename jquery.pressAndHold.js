@@ -54,7 +54,7 @@
 						$(_this.element).find(".holdButtonProgress").css("left", ((decaCounter / _this.settings.holdTime) * 100 - 100) + "%");
 						if (decaCounter == _this.settings.holdTime) {
 							_this.exitTimer(timer);
-							$(_this.element).trigger('click.pressAndHold');
+							$(_this.element).trigger('complete.pressAndHold');
 						}
 					}, 10);
 
