@@ -16,7 +16,7 @@ Also, I totally stole this idea from someone else but I can't remember who it wa
 2. Include plugin's code:
 
 	```html
-	<script src="dist/jquery.pressAndHold.js"></script>
+	<script src="jquery.pressAndHold.js"></script>
 	```
 
 3. Call the plugin:
@@ -29,9 +29,5 @@ Also, I totally stole this idea from someone else but I can't remember who it wa
 		progressIndicatorOpacity: 0.6
 	});
 	```
-
-#### [demo/](https://github.com/santhony7/pressAndHold)
-
-Contains a simple HTML demo.
 
 
