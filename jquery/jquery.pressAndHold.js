@@ -72,6 +72,9 @@
 			setTimeout(function() {
 				$(".holdButtonProgress").css("left", "-100%");
 				$(_this.element).trigger('end.pressAndHold');
+				$('rollOver').click(function(){
+  window.location = index.html;
+});
 			}, this.settings.progressIndicatorRemoveDelay);
 		}
 	};
