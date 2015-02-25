@@ -1,36 +1,177 @@
+
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Press and Hold Demo</title>
-		<meta http-equiv="x-ua-compatible" content="IE=8,9,10">
-	</head>
-	<style>
-		body { font-family: Arial, Helvetica, sans-serif }
-		.itemHolder { float:left; width:200px; height: 50px; padding: 20px; margin: 5px; text-align: center; border: 1px solid #000;}
-		.myDeleteButton { padding: 5px; border: 1px solid blue; width: 130px; text-align: center; font-size: 12px; margin-left: auto; margin-right: auto; background-color: #ccc;}
-	</style>
-	<body>
-		<div>
-			<div class="itemHolder">
-				<span>div example</span>
-				<div class="myDeleteButton" data-id="1">Delete Item</div>
-			</div>
-			<div class="itemHolder">
-				<span>button example</span>
-				<button class="myDeleteButton" data-id="2">Delete Item</button>
-			</div>
-			<div class="itemHolder">
-				<span>link example</span>
-				<a href="#" class="myDeleteButton" data-id="3">Delete Item</a>
-			</div>
-			<div class="itemHolder">
-				<span>span example</span>
-				<span class="myDeleteButton" data-id="4">Delete Item</span>
-			</div>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<style>
+	
+	
+	.myDeleteButton {margin-left: auto; margin-right: auto; float:left; }
+	
+	/*margin-right: padding: 5px;
+	width: 130px;
+	text-align: center; font-size: 12px; 
+	border: 1px solid blue;
+	background-color: #ccc;;
+	padding: 5px;
+	width: 130px;
+	text-align: center; font-size: 12px; 
+	border: 1px solid blue;
+	background-color: #ccc;
+	 */
+	
+</style>
+    
+    
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Press and hold conformation</a>
+        </div>
+        <!--<div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div>/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>jQuery Press and Hold Conformation</h1>
+        <p>jQuery button that the user holds down for a period of time. Forked and modified from <a href="https://github.com/santhony7/pressAndHold">Tony Smith</a>. I added a Bootstrap 3 theme and working examples. <br>
+          <br>
+        Currently the buttons are not linking after they finish the conformation. This is next up on the list to fix. Please add any contributions to the <a href="https://github.com/SuperboltStudios/pressAndHold">GitHub project</a>.</p>
+        <p><a class="btn btn-primary btn-lg myDeleteButton" href="#examples" role="button" data-id="2">Are you sure? Press and Hold &raquo;</a></p>
+        
+      </div>
+    </div>
+    
+    <div class="container">
+     <div class="row">
+		<div class="col-md-12 well well-sm" style="padding:15px 10px 25px 10px; margin-bottom:20px;"><h2>Find this project on Github</h2>
+
+        	
+
+		<div class="col-md-3">
+            <p><a class="btn btn-default" href="#" role="button"><strong>View on GitHub &raquo;</strong></a></p>
 		</div>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-		<script src="jquery.pressAndHold.min.js"></script>
+        <div class="col-md-3">
+            <iframe src="https://ghbtns.com/github-btn.html?user=SuperboltStudios&repo=pressAndHold&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+		</div>
+        <div class="col-md-3">
+            <iframe src="https://ghbtns.com/github-btn.html?user=SuperboltStudios&repo=pressAndHold&type=watch&count=true&size=large&v=2" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+		</div>
+        
+        
+        <div class="col-md-3">
+            <p>Like these buttons! Tweet it!</p>
+            <p><a href="https://twitter.com/intent/tweet?screen_name=_SuperBolt_&text=New%20%23Bootstrap3%20%23jQuery%20'Press%20and%20Hold%20Conformation%20button'%20on%20%23Github!%20%3E%3E%20http%3A%2F%2Fgoo.gl%2FZ1ebG4" class="twitter-mention-button" data-size="large" data-related="_SuperBolt_" data-dnt="true">Tweet to @_SuperBolt_</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+<p><iframe src="https://ghbtns.com/github-btn.html?user=SuperboltStudios&type=follow&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></p>
+		</div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2><a name="examples"></a>Button example</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          
+          <p><a class="btn btn-default myDeleteButton" href="#" data-id="2" role="button">Hold to Delete Button &raquo;</a></p>
+          
+        </div>
+        <div class="col-md-4">
+          <h2>Button example</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-warning myDeleteButton" href="#" role="button" data-id="2">Hold for conformation &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Button example</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-danger  myDeleteButton" href="#" role="button" data-id="2">Hold for conformation &raquo;</a></p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Link example</h2>
+          <p><a href="#" class="myDeleteButton" data-id="3">This link will delete this paragraph</a> &nbsp;id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          
+        </div>
+        <div class="col-md-4">
+          <h2>Link with button</h2>
+          <p><a href="#" class="myDeleteButton" data-id="3">This link will delete this paragraph</a> &nbsp;ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button" data-id="2">Hold for conformation &raquo;</a></p>
+       </div>
+        <div class="col-md-4" style="border:2px solid #C53739; padding-bottom:20px; margin-top:20px;">
+          <h2>Delete This Box</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <div class="myDeleteButton" data-id="1"><p><a class="btn btn-danger myDeleteButton" href="#" role="button" data-id="2">Delete this box &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2015</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script src="jquery/jquery.pressAndHold.min.js"></script>
+		
 		<script type="text/javascript">
 			 $(document).ready(function() {
 	        	$(".myDeleteButton").pressAndHold({
@@ -52,6 +193,28 @@
 	        	});
 	        });
 		</script>
-	</body>
+        
+        <script type="text/javascript">
+			 $(document).ready(function() {
+	        	$(".myDeleteButton").pressAndHold({
+	        		holdTime: 1000,
+					progressIndicatorRemoveDelay: 900,
+					progressIndicatorColor: "blue",
+					progressIndicatorOpacity: 0.3
+	        	});
 
+	        	$(".myDeleteButton").on('start.pressAndHold', function(event) {
+	        		console.log("start"); 
+	        	});
+	        	$(".myDeleteButton").on('complete.pressAndHold', function(event) {
+	        		console.log("complete");
+	        		$(event.target).parent().hide(); 
+	        	});
+	        	$(".myDeleteButton").on('end.pressAndHold', function(event) {
+	        		console.log("end");
+	        	});
+	        });
+		</script>
+        
+  </body>
 </html>
