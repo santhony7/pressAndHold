@@ -43,4 +43,4 @@ Also, I totally stole this idea from someone else but I can't remember who it wa
   The control has completed holding regarless of duration.
 
 ## Demo
- http://naptown.com/pressAndHold/
+ http://superboltstudios.github.io/pressAndHold/
