@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Press and Hold Demo</title>
+		<meta http-equiv="x-ua-compatible" content="IE=8,9,10">
+	</head>
+	<style>
+		body { font-family: Arial, Helvetica, sans-serif }
+		.itemHolder { float:left; width:200px; height: 50px; padding: 20px; margin: 5px; text-align: center; border: 1px solid #000;}
+		.myDeleteButton { padding: 5px; border: 1px solid blue; width: 130px; text-align: center; font-size: 12px; margin-left: auto; margin-right: auto; background-color: #ccc;}
+	</style>
+	<body>
+		<div>
+			<div class="itemHolder">
+				<span>div example</span>
+				<div class="myDeleteButton" data-id="1">Delete Item</div>
+			</div>
+			<div class="itemHolder">
+				<span>button example</span>
+				<button class="myDeleteButton" data-id="2">Delete Item</button>
+			</div>
+			<div class="itemHolder">
+				<span>link example</span>
+				<a href="#" class="myDeleteButton" data-id="3">Delete Item</a>
+			</div>
+			<div class="itemHolder">
+				<span>span example</span>
+				<span class="myDeleteButton" data-id="4">Delete Item</span>
+			</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="jquery.pressAndHold.min.js"></script>
+		<script type="text/javascript">
+			 $(document).ready(function() {
+	        	$(".myDeleteButton").pressAndHold({
+	        		holdTime: 1000,
+					progressIndicatorRemoveDelay: 900,
+					progressIndicatorColor: "blue",
+					progressIndicatorOpacity: 0.3
+	        	});
+
+	        	$(".myDeleteButton").on('start.pressAndHold', function(event) {
+	        		console.log("start"); 
+	        	});
+	        	$(".myDeleteButton").on('complete.pressAndHold', function(event) {
+	        		console.log("complete");
+	        		$(event.target).parent().hide(); 
+	        	});
+	        	$(".myDeleteButton").on('end.pressAndHold', function(event) {
+	        		console.log("end");
+	        	});
+	        });
+		</script>
+	</body>
+
+</html>
